@@ -153,7 +153,7 @@ function searchContact(){
         if(!searchTr.includes(searchValue)){
             tr.style.display = "none";
         }else{
-            tr.style.display = "block";
+            tr.style.display = "table-row";
         }
     });
 }
