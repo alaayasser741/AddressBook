@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/icon" sizes="16x16">
+    <title>Address Book</title>
+</head>
+<body>
+    <main>
+    <div id="navigation">
+        <ul class="nav-list">
+            <li id="btn-show-all">Show all Contacts</li>
+            <li id="btn-search">Search</li>
+            <li id="btn-add-new">Add New Contact</li>
+        </ul>
+    </div>
+    <div class="panel search-panel" id="search-panel">
+        <h1>Search Contacts</h1>
+        <form action="">
+            <!-- <div id="results"></div> -->
+            <div>
+                <input type="search" name="search" id="search" placeholder="Enter name of content">
+            </div>
+        </form>
+    </div>
+    <div class="add-new panel" id="add-new">
+        <h1>Add a new contact</h1>
+        <div>
+            <label>
+                <input type="text" name="person" id="contact-name" placeholder="Alaa Yasser">
+            </label>
+            <label>
+                <input type="text" name="phone" id="contact-phone" placeholder="+963 741 852"> 
+            </label>
+            <label>
+                <input type="email" name="email" id="contact-email" placeholder="alaa@example.com">
+            </label>
+            <label>
+                <input type="text" name="address" id="contact-address" placeholder="23th wast Africa">
+            </label>
+            <input type="submit" value="Add" id="add">
+        </div>
+    </div>
+    <!-- ////////////////////////////////// -->
+    <div class="edit-contact panel"id="edit-contact">
+        <h1>Edit contact</h1>
+        <div>
+            <label>
+                <input type="text" name="person" id="edit-contact-name" placeholder="Alaa Yasser">
+            </label>
+            <label>
+                <input type="text" name="phone" id="edit-contact-phone" placeholder="+963 741 852"> 
+            </label>
+            <label>
+                <input type="email" name="email" id="edit-contact-email" placeholder="alaa@example.com">
+            </label>
+            <label>
+                <input type="text" name="address" id="edit-contact-address" placeholder="23th wast Africa">
+            </label>
+            <input type="submit" value="Update" id="edit">
+        </div>
+    </div>
+    <!-- /////////////////// -->
+    <table id="table">
+        <thead>
+            <tr>
+                <th>
+                    <i class="fa-solid fa-id-card"></i>
+                    ID
+                </th>
+                <th>
+                    <i class="fa-solid fa-user"></i>
+                    Name
+                </th>
+                <th>
+                    <i class="fa-solid fa-phone"></i>
+                    Phone
+                </th>
+                <th>
+                    <i class="fa-solid fa-at"></i>
+                    Email
+                </th>
+                <th>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    Address
+                </th>
+                <th>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Edit
+                </th>
+                <th>
+                    <i class="fa-solid fa-trash-can"></i>
+                    Delete
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <footer>
+        <span> يفضل تدوير شاشة الهاتف </span>
+        <p>All Rights reserved © <a href="https://www.linkedin.com/in/alaayasser741/" target="_blank">Alaa Yasser</a></p>
+    </footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

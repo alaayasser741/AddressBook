@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Fgridant:rgba(66,181,213,0.5);
+    --Lgridant:rgba(58,210,11,0.5);
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-image: linear-gradient(30deg, var(--Fgridant) 0%,var(--Lgridant) 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,var(--Fgridant)),color-stop(100%,var(--Lgridant)));
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.nav-list{
+    width:100%;
+    max-width:30em;
+    text-align:center;
+    margin:0 auto 10px;
+
+}
+li{
+    list-style:none;
+    display:inline-block;
+    background:rgba(256,256,256,0.5);
+    padding:0.7em;
+    margin:0 0.1em;
+    cursor: pointer;
+    }
+li.active{
+    background-color:rgba(256,256,256,0.95);
+}
+.panel{
+    background-color: #fff;
+    width: 500px;
+    max-width: 97%;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+#search-panel #results{
+    min-height: 50px;
+}
+.panel input{
+    width: 90%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.panel input[type="text"],
+.panel input[type="email"],
+.panel input[type="search"]{
+    padding:0 10px;
+    outline: none;
+}
+.panel input[type="submit"]{
+    width: 30%;
+    cursor: pointer;
+}
+.edit-contact,
+.add-new,
+.search-panel
+{
+    display: none;
+}
+table{
+    border-collapse: collapse;
+    width: 800px;
+    max-width: 90%;
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+}
+table th,
+table td{
+    border: 1px solid #000;
+    padding:10px;
+}
+.red{
+    color: rgb(163, 0, 0);
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.green{
+    color: green;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.green:hover{
+    color: rgb(18, 214, 18);
+}
+.red:hover{
+    color: red;
+}
+footer{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+footer a{
+    color: blue;
+    text-decoration: none;
+}
